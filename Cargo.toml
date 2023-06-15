@@ -1,0 +1,20 @@
+[package]
+name = "kms"
+version = "0.1.0"
+edition = "2021"
+authors = ["malezjaa"]
+license = "MIT"
+description = "Rust adaptation of windows and linux commands."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+simplelog = { version = "^0.12.1", features = ["paris"] }
+clap = "4.3.4"
+colored = "2.0.0"
+chrono = "0.4.26"
+test_package = "0.0.1"
+
+[[bin]]
+name = "kms"
+path = "src/main.rs"
